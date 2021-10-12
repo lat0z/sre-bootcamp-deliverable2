@@ -41,7 +41,7 @@ For my implementation I have prefered the use of serverless [[1]](#1) resources 
 ### List of resources used 
 * S3 bucket
 * Lambda 
-* Parameter store 
+* Secret manager
 * Elastic Container Registry
 * App Runner 
 * DynamoDB 
@@ -59,7 +59,7 @@ Main advantages:
 * Automaticly load balanced.
 * The only way to provide access to aws service is using IAM roles.
 
-DisadvantageS:
+Disadvantages:
 * A bit more expensive in comparison to ECS.
 * It can't be scaled to a 0 instance like Google Cloud Run. [[4]](#4)
 * It can't access all the AWS services as off now.
